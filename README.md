@@ -8,7 +8,7 @@ Website: [ataberkozturk.com](https://ataberkozturk.com) · LinkedIn: [ata-berk-o
 
 **Computational Condensed Matter Physics group, Ankara University** (2024 – present, [hymf.ankara.edu.tr](https://hymf.ankara.edu.tr)). Band structures, densities of states and magnetic moments of 2D materials with VASP; surface adsorption studies run as batch jobs on the group's Slurm cluster (VASP 5.4.1, Intel MPI). Inputs, job submission and output parsing are scripted in Bash and Python.
 
-**TÜBİTAK 2209-A undergraduate research grant** (2025 – 2026). Surface functionalisation of the Janus monolayers SnSSe and TiSSe studied with DFT: adsorption sites, structural relaxation, phonons and optical properties. Presented as a poster at the 29th Condensed Matter Physics Ankara Meeting (Hacettepe University, December 2024) and at the Ankara University 80th Anniversary Student Projects Congress (June 2026).
+**TÜBİTAK 2209-A undergraduate research grant** (2024 – 2026). Surface functionalisation of the Janus monolayers SnSSe and TiSSe studied with DFT: adsorption sites, structural relaxation, phonons and optical properties. Presented as a poster at the 29th Condensed Matter Physics Ankara Meeting (Hacettepe University, December 2024) and at the Ankara University 80th Anniversary Student Projects Congress (June 2026).
 
 **B.Sc. thesis: machine learning for magnetic 2D materials** (2025 – 2026). A gradient boosting classifier that predicts the magnetic label of 2D materials from chemical composition, trained on the C2DB and V2DB databases. Received a poster award at the department's thesis presentations (January 2026). The code, and a later revision with stricter validation, is in [2d-magnetic-materials-ml](https://github.com/eigen-ml/2d-magnetic-materials-ml).
 
