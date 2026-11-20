@@ -8,9 +8,11 @@ Website: [ataberkozturk.com](https://ataberkozturk.com) · LinkedIn: [ata-berk-o
 
 **Computational Condensed Matter Physics group, Ankara University** (2024 – present, [hymf.ankara.edu.tr](https://hymf.ankara.edu.tr)). Band structures, densities of states and magnetic moments of 2D materials with VASP; surface adsorption studies run as batch jobs on the group's Slurm cluster (VASP 5.4.1, Intel MPI). Inputs, job submission and output parsing are scripted in Bash and Python.
 
-**TÜBİTAK 2209-A undergraduate research grant** (2024 – 2026). Surface functionalisation of the Janus monolayers SnSSe and TiSSe studied with DFT: adsorption sites, structural relaxation, phonons and optical properties. Presented as a poster at the 29th Condensed Matter Physics Ankara Meeting (Hacettepe University, December 2024) and at the Ankara University 80th Anniversary Student Projects Congress (June 2026).
+**TÜBİTAK 2209-A undergraduate research grant** (2025 – 2026). Surface functionalisation of the Janus monolayers SnSSe and TiSSe studied with DFT: adsorption sites, structural relaxation, phonons and optical properties. Related posters at the 29th Condensed Matter Physics Ankara Meeting (Hacettepe University, December 2024) and at the Ankara University 80th Anniversary Student Projects Congress (June 2026).
 
 **B.Sc. thesis: machine learning for magnetic 2D materials** (2025 – 2026). A gradient boosting classifier that predicts the magnetic label of 2D materials from chemical composition, trained on the C2DB and V2DB databases. Received a poster award at the department's thesis presentations (January 2026). The code, and a later revision with stricter validation, is in [2d-magnetic-materials-ml](https://github.com/eigen-ml/2d-magnetic-materials-ml).
+
+**M.Sc. thesis: ML screening and DFT validation of magnetic 2D materials** (2026 – present). The B.Sc. model, with the stricter validation, is now a first filter. Candidates are picked with charge-balance and novelty filters and computed with VASP on TRUBA, the Turkish national HPC centre: relaxation, magnetic ground state (FM, AFM, ferrimagnetic), phonons, band structure and DOS. 13 of 14 candidates have finished relaxation and ground-state calculations so far; two compounds with no reported 2D form come out ferromagnetic and dynamically stable. The work is ongoing.
 
 ## Projects
 
@@ -39,6 +41,13 @@ Python · Bash · Slurm · VASP · Quantum ESPRESSO · pytest · shellcheck
 <img src="https://raw.githubusercontent.com/eigen-ml/dft-hpc-toolkit/main/benchmarks/ausurf112/scaling.png" width="560" alt="AUSURF112 speedup and parallel efficiency on 1 to 8 MPI ranks">
 
 
+### [hymf-portal](https://github.com/eigen-ml/hymf-portal)
+
+The internal web portal of our research group, which I build and maintain: announcements, courses, meeting notes, how-to guides for VASP and TRUBA, and private workspaces where each student shares plans, progress notes and files with their advisors. Membership is invite-only, and access rules (who sees which workspace) are enforced in the database with Supabase row-level security policies. It is in daily use by the group and deploys automatically from `main` to Vercel.
+
+Next.js · React · TypeScript · Supabase (Postgres, Auth, RLS) · Tailwind CSS · Vercel
+
+
 ### [fish-length-estimation](https://github.com/eigen-ml/fish-length-estimation) (work in progress)
 
 Estimating fish length and weight from camera images for aquaculture: a YOLO detector, length measurement from segmentation masks along the principal axis, a scale from a reference object and the length–weight relation W = aL^b. The measurement code is tested on synthetic shapes; the detector is so far trained only on a public reef-fish dataset. Calibration against measured and weighed trout is the next step.
@@ -50,7 +59,7 @@ Python · OpenCV · Ultralytics YOLO
 
 ## HPC experience
 
-**HPC intern, EDULINE, Istanbul** (July – August 2025). Built Quantum ESPRESSO 7.4.1 from source on Rocky Linux 8.10 (Open MPI, OpenBLAS, FFTW, ScaLAPACK) and traced a parallel "Illegal instruction" failure to missing AVX support in the virtual CPU. Ran the AUSURF112 benchmark on 1–8 cores and compared it with published results. Set up a single-node Slurm system with munge from the OpenHPC repositories, and worked with Docker and Apptainer for running QE in containers. Wrote the installation documentation for the company; cleaned-up versions are in dft-hpc-toolkit.
+**HPC intern, EDULINE, Istanbul** (July – August 2025). Built Quantum ESPRESSO 7.4.1 from source on Rocky Linux 8.10 (Open MPI, OpenBLAS, FFTW, ScaLAPACK) and traced a parallel "Illegal instruction" failure to missing AVX support in the virtual CPU. Ran the AUSURF112 benchmark on 1–8 cores, traced the killed runs to memory limits, and after the VM went from 8 to 32 GB measured 87% parallel efficiency on 8 cores; compared the results with online benchmarks. Set up a single-node Slurm system with munge from the OpenHPC repositories, and worked with Docker and Apptainer for running QE in containers. Wrote the installation documentation for the company; cleaned-up versions are in dft-hpc-toolkit.
 
 **ARCHER2 HPC Driving Test** (University of Edinburgh, 2025).
 
@@ -61,4 +70,4 @@ Python · OpenCV · Ultralytics YOLO
 
 ## Tools
 
-VASP, Quantum ESPRESSO, VESTA · Python (NumPy, pandas, scikit-learn, pymatgen, matplotlib) · Bash · Slurm, OpenHPC, Open MPI · Docker, Apptainer · Linux (Rocky, Ubuntu) · Git, GitHub Actions · C++, Fortran
+VASP, Quantum ESPRESSO, VESTA · Python (NumPy, pandas, scikit-learn, pymatgen, matplotlib) · Bash · Slurm, OpenHPC, Open MPI · Docker, Apptainer · Linux (Rocky, Ubuntu) · Git, GitHub Actions · TypeScript, Next.js, Supabase · C++, Fortran
